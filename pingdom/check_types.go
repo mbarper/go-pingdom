@@ -289,6 +289,10 @@ func (ck *TCPCheck) PutParams() map[string]string {
 		m["resolution"] = strconv.Itoa(ck.Resolution)
 	}
 
+	if ck.ResponseTimeThreshold != 0 {
+		m["responsetime_threshold"] = strconv.Itoa(ck.ResponseTimeThreshold)
+	}
+
 	if ck.SendNotificationWhenDown != 0 {
 		m["sendnotificationwhendown"] = strconv.Itoa(ck.SendNotificationWhenDown)
 	}
