@@ -66,6 +66,7 @@ type TCPCheck struct {
 	Port                     int    `json:"port"`
 	ProbeFilters             string `json:"probe_filters,omitempty"`
 	Resolution               int    `json:"resolution,omitempty"`
+	ResponseTimeThreshold    int    `json:"responsetime_threshold,omitempty"`
 	SendNotificationWhenDown int    `json:"sendnotificationwhendown,omitempty"`
 	StringToExpect           string `json:"stringtoexpect,omitempty"`
 	StringToSend             string `json:"stringtosend,omitempty"`
